@@ -22,6 +22,9 @@ int* fib(int n) {
   return res;
 }
 
+int global_arr_len = 20;
+int* global_arr = fib(global_arr_len);
+
 struct S2 {
   const char* msg;
   void (*print_arr)(int*, int);
@@ -46,7 +49,9 @@ S1* f() {
   return s1;
 }
 
-void fill_arr(int** arr, int n) { *arr = fib(n); }
+void fill_arr(int** arr) { *arr = global_arr; }
+
+void print_global_arr() { print_arr(global_arr, global_arr_len); }
 }
 
 int main() {
@@ -57,6 +62,6 @@ int main() {
   // s2.print_arr(s2.fib(n), n);
 
   int* arr = nullptr;
-  fill_arr(&arr, n);
+  fill_arr(&arr);
   s2.print_arr(arr, n);
 }

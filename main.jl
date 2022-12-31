@@ -32,12 +32,21 @@ print_arr(arr)
 
 println("fib(10) = ", fib(10))
 
-function fill_arr(xxa, n)
-  ccall((:fill_arr, "./my_lib.so"), Cvoid, (Ptr{Ptr{Cint}}, Cint), xxa, n)
+function fill_arr(xxa)
+  ccall((:fill_arr, "./my_lib.so"), Cvoid, (Ptr{Ptr{Cint}},), xxa)
 end
 
-n = 20
+function print_global_arr()
+  ccall((:print_global_arr, "./my_lib.so"), Cvoid, ())
+end
+
+n = 15
 xxa = Ref{Ptr{Cint}}()
-fill_arr(xxa, n)
-xa = unsafe_wrap(Array{Cint}, xxa.x, n)
+fill_arr(xxa)
+xa = unsafe_wrap(Array{Cint}, xxa[], n)
 println("filled: ", xa)
+
+xa[10] = -1
+
+println("xa after modification: ", xa)
+print_global_arr()
