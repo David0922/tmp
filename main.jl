@@ -31,3 +31,13 @@ println("arr in julia: ", arr)
 print_arr(arr)
 
 println("fib(10) = ", fib(10))
+
+function fill_arr(xxa, n)
+  ccall((:fill_arr, "./my_lib.so"), Cvoid, (Ptr{Ptr{Cint}}, Cint), xxa, n)
+end
+
+n = 20
+xxa = Ref{Ptr{Cint}}()
+fill_arr(xxa, n)
+xa = unsafe_wrap(Array{Cint}, xxa.x, n)
+println("filled: ", xa)

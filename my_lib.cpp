@@ -45,6 +45,8 @@ S1* f() {
 
   return s1;
 }
+
+void fill_arr(int** arr, int n) { *arr = fib(n); }
 }
 
 int main() {
@@ -52,5 +54,9 @@ int main() {
 
   S2 s2 = *(f()->s2);
 
-  s2.print_arr(s2.fib(n), n);
+  // s2.print_arr(s2.fib(n), n);
+
+  int* arr = nullptr;
+  fill_arr(&arr, n);
+  s2.print_arr(arr, n);
 }
