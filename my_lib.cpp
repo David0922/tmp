@@ -22,9 +22,6 @@ int* fib(int n) {
   return res;
 }
 
-int global_arr_len = 20;
-int* global_arr = fib(global_arr_len);
-
 struct S2 {
   const char* msg;
   void (*print_arr)(int*, int);
@@ -34,6 +31,9 @@ struct S2 {
 struct S1 {
   S2* s2;
 };
+
+int global_arr_len = 20;
+int* global_arr = fib(global_arr_len);
 
 extern "C" {
 S1* f() {
@@ -52,6 +52,11 @@ S1* f() {
 void fill_arr(int** arr) { *arr = global_arr; }
 
 void print_global_arr() { print_arr(global_arr, global_arr_len); }
+
+void set_global_arr_at_idx(int idx, int val) {
+  assert(idx < global_arr_len);
+  global_arr[idx] = val;
+}
 }
 
 int main() {
