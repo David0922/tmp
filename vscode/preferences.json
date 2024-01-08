@@ -1,0 +1,134 @@
+{
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "/opt/homebrew/include/**"
+  ],
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+  "C_Cpp.formatting": "clangFormat",
+  "clang-format.fallbackStyle": "Google",
+  "docker.showStartPage": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "Ubuntu Mono",
+  // "editor.fontFamily": "IBM Plex Mono, Ubuntu Mono, Consolas",
+  "editor.fontSize": 20,
+  // "editor.fontSize": 18,
+  // "editor.fontSize": 22.5,
+  // "editor.fontWeight": "300",
+  "editor.formatOnSave": true,
+  "editor.letterSpacing": 0.5,
+  // "editor.letterSpacing": 0.75,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    100
+  ],
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "deepIndent",
+  // "editor.tokenColorCustomizations": {
+  //   "textMateRules": [
+  //     {
+  //       "scope": "keyword",
+  //       "settings": {
+  //         "fontStyle": "italic"
+  //       }
+  //     }
+  //   ]
+  // },
+  "explorer.confirmDelete": false,
+  "explorer.sortOrder": "type",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  // "gopls": {
+  //   "experimentalWorkspaceModule": true
+  // },
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "javascript.format.semicolons": "insert",
+  "javascript.preferences.quoteStyle": "single",
+  "markdown.preview.fontSize": 20,
+  "markdown.preview.lineHeight": 1.5,
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxBracketSameLine": true,
+  "prettier.jsxClosingBracketLocation": [
+    1,
+    "after-props"
+  ],
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{based_on_style: pep8, column_limit: 100, continuation_indent_width: 2, indent_width: 2}"
+  ],
+  "python.showStartPage": false,
+  // "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop", // use rubocop for formatting
+  "security.workspace.trust.untrustedFiles": "open",
+  "svelte.enable-ts-plugin": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "update.mode": "none",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.startupEditor": "none",
+  "redhat.telemetry.enabled": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "python.defaultInterpreterPath": "/Users/david/work-dir/py3.11",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "update.showReleaseNotes": false,
+  "git.openRepositoryInParentFolders": "never",
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false
+}

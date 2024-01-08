@@ -1,0 +1,30 @@
+custom font: Ubuntu Mono Regular; 15;
+
+cell spacing: 1.10 x w; 1.20 x h;
+
+cursor shape: I-Beam
+
+disable terminal bell
+
+color palette
+
+BG #000000
+FG #C5C8C6
+0  #282A2E
+1  #FFB4B4
+2  #FFFFA0
+3  #DE935F
+4  #5F819D
+5  #85678F
+6  #5E8D87
+7  #707880
+8  #5A606C
+9  #CC6666
+10 #B5BD68
+11 #F0C674
+12 #81A2BE
+13 #B294BB
+14 #8ABEB7
+15 #C5C8C6
+
+show scrollbar: disable

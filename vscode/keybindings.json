@@ -1,0 +1,41 @@
+[
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+escape",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "shift+escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+[",  // cmd+[
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "alt+]",  // cmd+]
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  }
+]

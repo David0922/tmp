@@ -1,0 +1,135 @@
+cschlosser.doxdocgen
+esbenp.prettier-vscode
+GitHub.vscode-pull-request-github
+golang.go
+googlecloudtools.cloudcode
+jeff-hykin.better-cpp-syntax
+mindaro-dev.file-downloader
+mindaro.mindaro
+ms-azuretools.vscode-docker
+ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode.cmake-tools
+ms-vscode.cpptools
+ms-vscode.cpptools-extension-pack
+ms-vscode.cpptools-themes
+ms-vsliveshare.vsliveshare
+ms-vsliveshare.vsliveshare-audio
+redhat.java
+redhat.vscode-yaml
+streetsidesoftware.code-spell-checker
+svelte.svelte-vscode
+twxs.cmake
+xaver.clang-format
+
+BazelBuild.vscode-bazel
+ms-python.python
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
+ms-vscode.cpptools
+ms-vscode.Go
+redhat.java
+Tyriar.sort-lines
+VisualStudioExptTeam.vscodeintellicode
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
+xaver.clang-format
+
+
+https://code.visualstudio.com/docs/editor/portable
+VSCode
+├── Code.exe (or code executable)
+└── data
+    └── tmp
+
+
+color theme: Monokai
+font size: 15
+insert final newline: enabled
+render whitespace: all
+show welcome page on startup: disabled
+trim final newlines: enabled
+trim trailing whitespace: enabled
+
+{
+    "C_Cpp.default.cppStandard": "c++11",
+    "editor.fontFamily": "Consolas" (windows), "Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile"
+}
+
+// windows
+{
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 15,
+    "editor.renderWhitespace": "all",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile"
+}
+
+key bindings:
+[
+    { "key": "ctrl+shift+tab",          "command": "workbench.action.previousEditor" },
+    { "key": "ctrl+tab",                "command": "workbench.action.nextEditor" }
+]
+
+mac:
+    cmd + shift + p -> type 'shell' -> Shell Command : Install code in PATH
+
+
+
+
+Python extension for Visual Studio Code
+
+C/C++, Java, Python for Visual Studio Code
+
+linter, autopep8
+
+
+
+
+
+
+
+code formatting
+
+    Windows: Shift + Alt + F
+
+    Mac:     Shift + Option + F
+
+    Ubuntu:  Ctrl + Shift + I
+
+open settings
+
+    mac: cmd ,
+
+
+
+todo:
+
+    sort imports
+
+    gray out unused imports

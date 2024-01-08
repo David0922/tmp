@@ -1,0 +1,11 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+  "variables": {
+    "red3": "hsl(0, 50%, 50%)"
+  },
+  "globals": {
+    "background": "var(black2)",
+    "misspelling": "var(red3)"
+  },
+  "rules": []
+}
